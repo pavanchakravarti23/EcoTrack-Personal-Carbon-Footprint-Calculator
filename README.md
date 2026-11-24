@@ -115,7 +115,41 @@ Or manually with `javac` / `java`:
 mkdir -p out/main
 javac --release 17 -encoding UTF-8 -d out/main $(find src/main/java -name "*.java")
 java -cp out/main com.ecotrack.main.EcoTrackApp
+
+
 ```
+OR
+
+You only need JDK 17 or newer (and optionally Maven) — no database, server, or internet connection is needed after cloning.
+
+Step 1: Clone the Repository
+
+bash
+
+git clone https://github.com/pavanchakravarti23/EcoTrack-Personal-Carbon-Footprint-Calculator.git
+cd EcoTrack-Personal-Carbon-Footprint-Calculator
+
+Step 2: Run Using Any of These Methods
+
+Option A — Windows (Double-Click or Terminal, No Maven Required):
+
+bat
+build-and-run.bat
+
+Option B — Using Maven (Windows / macOS / Linux):
+
+bash
+mvn test
+mvn compile exec:java
+
+Option C — Direct JDK Commands (macOS / Linux):
+
+bash
+mkdir -p out/main
+javac --release 17 -encoding UTF-8 -d out/main $(find src/main/java -name "*.java")
+java -cp out/main com.ecotrack.main.EcoTrackApp
+
+Option D — Opening in an IDE (IntelliJ IDEA / Eclipse / VS Code / NetBeans): Open the cloned folder as a Maven project (pom.xml), then run com.ecotrack.main.EcoTrackApp (or run tests in src/test/java).
 
 ---
 
